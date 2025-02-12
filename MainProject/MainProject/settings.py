@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "tution",
     "LearnModels",
+    "LearnForms",
 ]
 
 MIDDLEWARE = [

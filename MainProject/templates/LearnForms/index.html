@@ -1,0 +1,23 @@
+{% extends "../basic.html" %}
+
+
+{% block content %}
+
+
+<h1>This is learnforms</h1>
+
+<div class="container">
+
+    <form action=""method="POST">
+        {% csrf_token %}
+       {{ form }}
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+
+<p>goes to another contact file  </p>
+<a href="{% url 'LearnForms:anothercontactforms' %}">AnotherContact</a>
+{% endblock content %}
+
+
+

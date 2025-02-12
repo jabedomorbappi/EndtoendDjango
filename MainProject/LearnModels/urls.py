@@ -8,6 +8,7 @@ urlpatterns = [
     path('second/', views.showSecond, name='showSecond'),
     path('register/', views.student_registration, name='student_registration'),
     path('success/', success_page, name='success_page'),  # Add this line
+    
 ]
     # URL changed
 
