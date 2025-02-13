@@ -15,7 +15,9 @@ SECRET_KEY = "django-insecure-awcz96@a^(h#t1tmp4v!@wk$gnzk5-#yle(9=0cayzenria-r)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+
 
 
 # Application definition
@@ -30,6 +32,10 @@ INSTALLED_APPS = [
     "tution",
     "LearnModels",
     "LearnForms",
+    "LearnFormModels",
+    "crispy_forms",
+    "crispy_bootstrap5",
+    
 ]
 
 MIDDLEWARE = [
@@ -104,6 +110,13 @@ USE_I18N = True
 
 USE_TZ = True
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:8000",
+    "http://localhost:8000"
+]
+
+
+CRISPY_TEMPLATE_PACK="bootstrap5"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

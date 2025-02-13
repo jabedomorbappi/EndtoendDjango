@@ -10,6 +10,7 @@ urlpatterns = [
     #connect LearnModels app
     path('learnmodels/', include('LearnModels.urls')),
     path("learnforms/",include("LearnForms.urls")),
+    path("learnformmodels/",include("LearnFormModels.urls")),
     
     
     path('',home,name='home_page'),
